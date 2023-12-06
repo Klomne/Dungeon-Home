@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8bf8870b5fb9b449ba6957ab761c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NomAudio: {fileID: 8300000, guid: b72ac5ab714810c4eb5a6d5b84b63d76, type: 3}
+  nomAudio: {fileID: 8300000, guid: b72ac5ab714810c4eb5a6d5b84b63d76, type: 3}
 --- !u!64 &8774272152968926026
 MeshCollider:
   m_ObjectHideFlags: 0
