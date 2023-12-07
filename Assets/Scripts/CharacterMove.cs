@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMove : MonoBehaviour
 {
@@ -52,6 +53,13 @@ public class CharacterMove : MonoBehaviour
                     interact.OnInteraction();
                 }
             }
+        }
+        //Menu Button
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene("Menu");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
