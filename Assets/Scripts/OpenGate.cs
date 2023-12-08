@@ -6,15 +6,21 @@ using UnityEngine;
 
 public class OpenGate : Interactable
 {
+    Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     public override void OnInteraction()
     {
-        // EventTrigger trigger = GetComponentInParent<EventTrigger>();
-        // EventTrigger.Entry entry = new EventTrigger.Entry();
-        // entry.eventID = EventTriggerType.PointerClick;
-        // entry.callback.AddListener( (eventData) => { Foo(); } );
-        // trigger.delegates.Add(entry);
+        animator.SetBool("open", true);
+        Invoke(nameof(ChangeBool), 3);
+    }
+
+    private void ChangeBool()
+    {
+        animator.SetBool("open", false);
+
     }
 }
-
-
-//https://discussions.unity.com/t/how-do-you-add-an-ui-eventtrigger-by-script/125158/2
