@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca68536124a6fb349bde2015261fc06d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStart: 0
+  isStart: 1
   isRestart: 0
   isQuit: 0
 --- !u!1 &1504452221
